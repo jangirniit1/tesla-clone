@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding: 0 2rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  display: block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.sideBar {
+  position: fixed;
+  width: 250px;
+  height: 100vh !important;
+  background-color: #fff;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  z-index: 99;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+.sideBar a {
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem;
+  color: #000;
+  font-weight: 700;
+}
+span.closeBar {
+  text-align: end;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:1000px){
+  .mainMenu{
+    display: none;
+  }
+}
+header ul a{
+  padding: unset;
+}
+header{
+  padding: 0 0.5rem;
+}
